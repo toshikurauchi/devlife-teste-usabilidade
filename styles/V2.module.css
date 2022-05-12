@@ -1,0 +1,51 @@
+.container {
+  position: absolute;
+  width: 100%;
+  background-color: ghostwhite;
+}
+
+.main {
+  --img-size: 20rem;
+  padding: 1rem 3rem 4rem;
+  background-color: white;
+}
+
+.main h1,
+.main h2,
+.main h3,
+.main strong,
+.main p,
+.main li,
+.main td,
+.main .admonition,
+.main code {
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 0.9;
+  margin: 0;
+}
+
+.main ol,
+.main ul {
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+.multiImageContainer {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+.multiImageContainer img {
+  max-width: var(--img-size);
+}
+
+.figure {
+  display: block;
+  max-width: var(--img-size);
+  margin: 1rem auto;
+}

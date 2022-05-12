@@ -1,0 +1,40 @@
+.container {
+  position: absolute;
+  width: 100%;
+  background-color: ghostwhite;
+}
+
+.main {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 1rem 3rem 4rem;
+  background-color: white;
+}
+
+@media (min-width: 600px) {
+  .main {
+    margin: 2rem auto;
+  }
+}
+
+.main p {
+  max-width: var(--max-chars);
+}
+
+.multiImageContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.multiImageContainer img {
+  max-width: min(calc(var(--container) / 2 - 4rem), 100%);
+}
+
+.figure {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+}
