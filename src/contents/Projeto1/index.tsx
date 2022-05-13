@@ -14,16 +14,15 @@ const Projeto1 = ({ styles }: IProjeto1Props) => {
       </Head>
 
       <main className={styles.main}>
-        <h1>Projeto Individual - Aventura em alto mar!</h1>
+        <h1>Aventura em alto mar!</h1>
 
         <div className={styles.avisos}>
           <div className={styles.avisos}>
-            <strong>Data de Entrega: 29/03 (terça-feira) até 21hrs</strong>
+            <strong>Data de Entrega:</strong> 29/03 (terça-feira) até 21hrs
           </div>
           <div className={styles.avisos}>
-            <strong>
-              A entrega do projeto deverá ser feita via Blackboard
-            </strong>
+            A entrega do projeto deverá ser feita{" "}
+            <strong>via Blackboard</strong>
           </div>
         </div>
 
@@ -78,110 +77,118 @@ const Projeto1 = ({ styles }: IProjeto1Props) => {
 
           <ol>
             <li>
-              <strong>Respirar:</strong> Jogo verifica se há a necessidade de
-              reduzir o oxigênio. O oxigênio deve ser reduzido de acordo com a
-              quantidade de tesouros que o mergulhador estiver carregando. Ou
-              seja, se o jogador estiver carregando <code>2</code> tesouros o
-              nível do oxigênio deve diminuir <code>2</code> níveis. Se o
-              mergulhador não estiver carregando nenhum tesouro então não há a
-              necessidade de reduzir o oxigênio. Se o oxigênio alcançar o nível{" "}
-              <code>0</code> ou menor, o jogador da vez termina a rodada e o
-              jogo acaba.
-              <img
-                src="img/respirar.gif"
-                alt="Deep Sea Adventure - Etapa de respirar"
-                className={styles.figure}
-              />
+              <div className={styles.textAndImg}>
+                <img
+                  src="img/respirar.gif"
+                  alt="Deep Sea Adventure - Etapa de respirar"
+                  className={styles.figure}
+                />
+                <strong>Respirar:</strong> Jogo verifica se há a necessidade de
+                reduzir o oxigênio. O oxigênio deve ser reduzido de acordo com a
+                quantidade de tesouros que o mergulhador estiver carregando. Ou
+                seja, se o jogador estiver carregando <code>2</code> tesouros o
+                nível do oxigênio deve diminuir <code>2</code> níveis. Se o
+                mergulhador não estiver carregando nenhum tesouro então não há a
+                necessidade de reduzir o oxigênio. Se o oxigênio alcançar o
+                nível <code>0</code> ou menor, o jogador da vez termina a rodada
+                e o jogo acaba.
+              </div>
             </li>
             <li>
-              <strong>Avançar ou Retroceder?:</strong> No início da partida o
-              jogador começa dentro do submarino. Depois de sair do submarino
-              ele deve escolher continuar avançando para o fundo do mar ou
-              voltar para o submarino.
-              <ul>
-                <li>
-                  O mergulhador não pode voltar para o submarino sem tesouros.
-                </li>
-                <li>
-                  O mergulhador só pode voltar para o submarino uma única vez.
-                </li>
-                <li>
-                  Quando o mergulhador decidir retornar para o submarino ele não
-                  pode avançar de volta para o fundo do mar.
-                </li>
-                <li>
-                  Depois que o jogador decidir retroceder o jogador não precisa
-                  passar por este passo, pois a única opção agora será
-                  retroceder.
-                </li>
-              </ul>
-              <img
-                src="img/avancar_ou_retroceder.gif"
-                alt="Deep Sea Adventure - Avançar ou Retroceder"
-                className={styles.figure}
-              />
+              <div className={styles.textAndImg}>
+                <img
+                  src="img/avancar_ou_retroceder.gif"
+                  alt="Deep Sea Adventure - Avançar ou Retroceder"
+                  className={styles.figure}
+                />
+                <strong>Avançar ou Retroceder?:</strong> No início da partida o
+                jogador começa dentro do submarino. Depois de sair do submarino
+                ele deve escolher continuar avançando para o fundo do mar ou
+                voltar para o submarino.
+                <ul>
+                  <li>
+                    O mergulhador não pode voltar para o submarino sem tesouros.
+                  </li>
+                  <li>
+                    O mergulhador só pode voltar para o submarino uma única vez.
+                  </li>
+                  <li>
+                    Quando o mergulhador decidir retornar para o submarino ele
+                    não pode avançar de volta para o fundo do mar.
+                  </li>
+                  <li>
+                    Depois que o jogador decidir retroceder o jogador não
+                    precisa passar por este passo, pois a única opção agora será
+                    retroceder.
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
-              <strong>Nadar:</strong> Jogador rola dois dados <code>d3</code>{" "}
-              (dado de três faces) para verificar o avanço. A soma dos dois
-              resultados do dado <code>d3</code> representa a profundidade em
-              que o mergulhador vai nadar.
-              <img
-                src="img/nadar.gif"
-                alt="Deep Sea Adventure - Nadar"
-                className={styles.figure}
-              />
-              Se o jogador estiver carregando tesouros, então a quantidade de
-              tesouros carregados deve ser subtraído do valor do avanço. (
-              <strong>Exemplo:</strong> Se um dado sorteou o valor{" "}
-              <code>1</code> e o outro dado sorteou o valor
-              <code>3</code> e o jogador está carregando <code>3</code>{" "}
-              tesouros, então o jogador vai avançar somente uma casa). Note que
-              se o valor for negativo o jogador deve ficar parado. Esse passo se
-              aplica tanto para avançar para o fundo do mar quanto para retornar
-              para o submarino.
-              <img
-                src="img/carrying_treasures.gif"
-                alt="Deep Sea Adventure - Aumentando o peso"
-                className={styles.figure}
-              />
+              <div className={styles.textAndImg}>
+                <img
+                  src="img/nadar.gif"
+                  alt="Deep Sea Adventure - Nadar"
+                  className={styles.figure}
+                />
+                <strong>Nadar:</strong> Jogador rola dois dados <code>d3</code>{" "}
+                (dado de três faces) para verificar o avanço. A soma dos dois
+                resultados do dado <code>d3</code> representa a profundidade em
+                que o mergulhador vai nadar.
+                <img
+                  src="img/carrying_treasures.gif"
+                  alt="Deep Sea Adventure - Aumentando o peso"
+                  className={styles.figure}
+                />
+                Se o jogador estiver carregando tesouros, então a quantidade de
+                tesouros carregados deve ser subtraído do valor do avanço. (
+                <strong>Exemplo:</strong> Se um dado sorteou o valor{" "}
+                <code>1</code> e o outro dado sorteou o valor
+                <code>3</code> e o jogador está carregando <code>3</code>{" "}
+                tesouros, então o jogador vai avançar somente uma casa). Note
+                que se o valor for negativo o jogador deve ficar parado. Esse
+                passo se aplica tanto para avançar para o fundo do mar quanto
+                para retornar para o submarino.
+              </div>
             </li>
             <li>
-              <strong>Caça ao tesouro:</strong> Neste passo o jogador pode fazer
-              uma busca por tesouros ou decidir soltar um dos tesouros que ele
-              carrega (<strong>Obs.:</strong> Este passo pode ser realizado
-              independente da direção que o mergulhador estiver indo. Então se o
-              mergulhador estiver retornando para o submarino ele pode vasculhar
-              a área em busca de tesouros).
-              <img
-                src="img/caca_ao_tesouro.png"
-                alt="Deep Sea Adventure - Encontrando Tesouros"
-                className={styles.figure}
-              />
-              <ul>
-                <li>
-                  Se o mergulhador decidir soltar um tesouro, ele pode escolher
-                  qual tesouro deve ser descartado. Note que se o mergulhador
-                  estiver retornando ao submarino ele não pode soltar o tesouro
-                  se for o único que ele carrega.
-                </li>
-                <li>
-                  Se o mergulhador decidir vasculhar a área:
-                  <ul>
-                    <li>
-                      O jogo deve informar o valor da recompensa. O valor da
-                      recompensa é um número aleatório que depende da
-                      profundidade do mar em que o mergulhar se encontra.
-                    </li>
-                    <li>
-                      O jogador decide se ele deseja ficar ou não com o tesouro.
-                      Note que o jogador só pode carregar no máximo 4 tesouros.
-                      Então se ele já estiver com 4 tesouros, o jogador escolhe
-                      qual tesouro deve ser descartado.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+              <div className={styles.textAndImg}>
+                <img
+                  src="img/caca_ao_tesouro.png"
+                  alt="Deep Sea Adventure - Encontrando Tesouros"
+                  className={styles.figure}
+                />
+                <strong>Caça ao tesouro:</strong> Neste passo o jogador pode
+                fazer uma busca por tesouros ou decidir soltar um dos tesouros
+                que ele carrega (<strong>Obs.:</strong> Este passo pode ser
+                realizado independente da direção que o mergulhador estiver
+                indo. Então se o mergulhador estiver retornando para o submarino
+                ele pode vasculhar a área em busca de tesouros).
+                <ul>
+                  <li>
+                    Se o mergulhador decidir soltar um tesouro, ele pode
+                    escolher qual tesouro deve ser descartado. Note que se o
+                    mergulhador estiver retornando ao submarino ele não pode
+                    soltar o tesouro se for o único que ele carrega.
+                  </li>
+                  <li>
+                    Se o mergulhador decidir vasculhar a área:
+                    <ul>
+                      <li>
+                        O jogo deve informar o valor da recompensa. O valor da
+                        recompensa é um número aleatório que depende da
+                        profundidade do mar em que o mergulhar se encontra.
+                      </li>
+                      <li>
+                        O jogador decide se ele deseja ficar ou não com o
+                        tesouro. Note que o jogador só pode carregar no máximo 4
+                        tesouros. Então se ele já estiver com 4 tesouros, o
+                        jogador escolhe qual tesouro deve ser descartado.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ol>
 
@@ -237,8 +244,8 @@ const Projeto1 = ({ styles }: IProjeto1Props) => {
           <table>
             <thead>
               <tr>
-                <td>Níveis</td>
-                <td>Possíveis valores</td>
+                <th>Níveis</th>
+                <th>Possíveis valores</th>
               </tr>
             </thead>
             <tbody>
@@ -270,8 +277,8 @@ const Projeto1 = ({ styles }: IProjeto1Props) => {
             etapas e apresentar um exemplo de como ficaria a implementação deste
             jogo para a versão para terminal. (<strong>Obs.:</strong> O exemplo
             dos vídeos utiliza um print diferente para facilitar a compreensão
-            do exemplo. Desta forma, o seu programa
-            <strong>não</strong> precisa seguir o mesmo comportamento.)
+            do exemplo. Desta forma, o seu programa <strong>não</strong> precisa
+            seguir o mesmo comportamento.)
           </p>
 
           <p>
@@ -449,9 +456,8 @@ const Projeto1 = ({ styles }: IProjeto1Props) => {
             <div className={styles.admonitionTitle}>Atenção</div>
             <div className={styles.admonitionContent}>
               A simulação acima tem o intuito de auxiliar no desenvolvimento do
-              jogo através de <strong>alguns</strong>
-              exemplos. Ou seja, podem existir cenários que não foram ilustrados
-              através dos gifs.
+              jogo através de <strong>alguns</strong> exemplos. Ou seja, podem
+              existir cenários que não foram ilustrados através dos gifs.
             </div>
           </div>
         </section>
@@ -544,7 +550,7 @@ const Projeto1 = ({ styles }: IProjeto1Props) => {
             </li>
           </ul>
 
-          <h3>CONCEITO A</h3>
+          <h3>CONCEITO A+</h3>
 
           <ul>
             <li>Atingiu o nível A e mais os itens listados abaixo.</li>

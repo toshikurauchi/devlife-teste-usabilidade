@@ -23,7 +23,7 @@
   font-size: 1rem;
   font-weight: 100;
   line-height: 0.9;
-  margin: 0;
+  margin: 0 0 0.5rem;
 }
 
 .main ol,
@@ -47,5 +47,5 @@
 .figure {
   display: block;
   max-width: var(--img-size);
-  margin: 1rem auto;
+  margin: 1rem 0;
 }

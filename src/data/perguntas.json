@@ -1,0 +1,12 @@
+[
+  {
+    "msg": "Após clicar em INICIAR, você deverá responder as perguntas apresentadas aqui",
+    "button": "INICIAR",
+    "hideBackground": true
+  },
+  {
+    "msg": "TESTE",
+    "button": "Bla",
+    "hideBackground": false
+  }
+]
